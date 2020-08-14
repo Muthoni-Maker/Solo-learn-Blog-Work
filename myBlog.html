@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+  <title>My Blog</title> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" <="" script="">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" ></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+      </script> 
+      <link rel="stylesheet" type="text/css" href="myblog.css">
+ 
+ </head> 
+ <body> 
+  <h1 id="header">My Blog</h1> 
+  <hr> 
+  <form> 
+   <input id="mysearch" name="searchitem" type="search"> 
+  </form> 
+  <hr> 
+  <h2 class="D"><strong>This is me</strong></h2> 
+  <p>They call me Enthusiastic Esther,because determination is what drives me.That's one of the major strengths that I carry in me. I always tend to find most of my energy alone and always find peace and tranquility in calm and solitude environment.One of the things that I love doing is reading motivational books,science fiction novels and coding.In terms of my career,I am mostly passionate about data science and I am currently on the path to developing the necessary skills in building my career.</p> 
+  <hr> 
+  <h2>My Skills</h2> 
+  <p></p> 
+  <ul id="skills"> 
+   <li>Python <progress min="0" max="100" value="30">%</progress></li> 
+   <li>JavaScript<progress min="0%" max="100" value="40"></progress></li> 
+   <li>Mobile Development<progress min="0" max="100" value="30"></progress></li> 
+   <li>HTML<progress min="0" max="100" value="80"></progress></li> 
+   <li>CSS<progress min="0" max="100" value="80"></progress></li> 
+   <li>UI and UX design<progress min="0" max="100" value="40"></progress></li> 
+   <li>Entrepreneurship<progress min="0" max="100" value="20"></progress></li> 
+   <li>Hardware Design<progress min="0" max="100" value="40"></progress></li> 
+   <li>Electronics design<progress min="0" max="100" value="40"></progress></li> 
+   <li>Kotlin<progress min="0" max="100" value="30"></progress></li> 
+  </ul> 
+  <p></p> 
+  <hr> 
+  <h2>My schedule</h2> 
+  <div style="overflow-x:auto;"> 
+   <p></p> 
+   <div class="container table-responsive"> 
+    <table> 
+     <caption>
+       TimeTable 
+     </caption> 
+     <tbody> 
+      <tr> 
+       <th>Day</th> 
+       <th>Time</th> 
+       <th>Subject</th> 
+       <th>Review</th> 
+      </tr> 
+      <tr> 
+       <td>Monday</td> 
+       <td>4:00am-8:00am</td> 
+       <td>JavaScript</td> 
+       <td>Fair</td> 
+      </tr> 
+      <tr> 
+       <td>Tuesday</td> 
+       <td>4:00am-8:00am</td> 
+       <td>Kotlin</td> 
+       <td>Fair</td> 
+      </tr> 
+      <tr> 
+       <td>Wednesday</td> 
+       <td>4:00am-8:00am</td> 
+       <td>Python</td> 
+       <td>Fair</td> 
+      </tr> 
+      <tr> 
+       <td>Thursday</td> 
+       <td>4:00am-8:00am</td> 
+       <td>JavaScript</td> 
+       <td>Fair</td> 
+      </tr> 
+      <tr> 
+       <td>Friday</td> 
+       <td>4:00am-8:00am</td> 
+       <td>kotlin</td> 
+       <td>Fair</td> 
+      </tr> 
+      <tr> 
+       <td>Saturday</td> 
+       <td>4:00am-8:00am</td> 
+       <td>Python</td> 
+       <td>Fair</td> 
+      </tr> 
+      <tr> 
+       <td>Sunday</td> 
+       <td>4:00am-8:00am</td> 
+       <td>JavaScript</td> 
+       <td>Fair</td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <p></p> 
+   </div> 
+   <br> 
+   <hr> 
+   <div class="container" style="Background-color:rgb(114,145,145)"> 
+    <h3><strong>Contact Me</strong></h3> 
+    <form onsubmit="return validate()" method="post"> 
+     <fieldset> 
+      <legend><strong>Fill Below</strong></legend> 
+      <div class="form-group"> 
+       <label for="fname">First Name:</label> 
+       <input type="text" id="fname" name="fname" required="" autocomplete="off" class="form-control"> 
+      </div> 
+      <br> 
+      <div class="form-group"> 
+       <label for="Sname">First Name Again.:</label> 
+       <input type="text" id="sname" name="sname" autocomplete="off" required="" class="form-control"> 
+      </div> 
+      <br> 
+      <div class="form-group"> 
+       <textarea name="message" cols="20" rows="10" class="form-control" value="Text">Text</textarea> 
+      </div> 
+      <br> 
+      <div class="form-group"> 
+       <input type="submit" class="form-control"> 
+      </div> 
+     </fieldset> 
+    </form> 
+   </div> 
+   <hr> 
+   <script>
+    function validate(){
+      var n1=document.getElementById("fname");
+      var n2=document.getElementById("sname");
+      if (n1.value!="" && n2.value!=""){
+        if (n1.value==n2.value){
+          return true;
+        }
+      }
+      alert ("Name doesn't match!");
+      return false;
+      }
+      </script> 
+   <div class="footer"> 
+    <span><b><h3>Follow Me</h3><b><br>Twitter@muthoni-kenya<br>Facebook@Esther Kamau<br>LinkedIn@Esther Kamau<br>Instagram@Esther-Kenya<br><h3>Hobbies</h3>Playing Bord Games<br>Coding<br>Reading: 
+       <ul> 
+        <li>Science Fiction novels (Currently reading Prey by Michael Crichton)<br></li> 
+        <li>Motivation Books</li> 
+       </ul></b></b></span> 
+   </div> 
+   <hr> 
+   <b><b> 
+     <div class="copyright" background-color="#000000">
+       ©May 2020 My Blog.All rights reserved. 
+     </div> 
+     <hr> </b></b> 
+  </div> 
+ 
+</body></html>
